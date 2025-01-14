@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
 
+/* General body styles */
 body {
     font-family: 'Cabin';
     background-color: #758190;
@@ -19,8 +20,17 @@ body {
     margin-top: -10px;
 }
 
+/* Updated CSS rule for stats-container */
 .stats-container {
-    display: flex;
+    display: flex; /* Add flexbox */
+    align-items: center; /* Center align items */
+    justify-content: space-between; /* Distribute items evenly */
+    margin: 10px 0; /* Add some spacing around the container */
+}
+
+.stats-container:hover {
+    cursor: pointer; /* Set cursor to pointer */
+    box-shadow: 0 0 30px lightblue; /* Add box-shadow on hover */
 }
 
 .stats-card {
